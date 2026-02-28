@@ -26,9 +26,12 @@ body {
 
 /* Línea vertical entre columnas */
 .separador-vertical {
-  width: 1px;
+  width: 2px;
   background-color: #dddfe2;
   align-self: stretch;
   margin: 0 60px;
   flex-shrink: 0;
+  position: relative;    /* ← agrega esto */
+  top: -140px;           /* ← sube hasta arriba */
+  bottom: 0;
 }
