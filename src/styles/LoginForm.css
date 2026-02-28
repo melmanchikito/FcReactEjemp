@@ -1,0 +1,68 @@
+/* Caja - sin borde, solo sombra suave */
+.caja {
+  background: white;
+  border-radius: 8px;
+  box-shadow: none;   /* ← cambia esto */
+  border: none;
+  padding: 20px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.caja form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;   /* ← más espacio entre inputs y botón */
+}
+/* Inputs más redondeados */
+.caja-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dddfe2;
+  border-radius: 20px;        /* ← más redondeado */
+  font-size: 16px;
+  outline: none;
+  color: #1c1e21;
+}
+
+.caja-input:focus {
+  border-color: #1877f2;
+  box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+/* Botón login más redondeado */
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 20px;        /* ← más redondeado */
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background: #166fe5;
+}
+
+/* Botón crear cuenta más redondeado */
+.btn-crear {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 24px;
+  background: white;
+  color: #1877f2;
+  border: 1.5px solid #1877f2;
+  border-radius: 20px;        /* ← más redondeado */
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;                /* ← ocupa todo el ancho como el original */
+}
+
+.btn-crear:hover {
+  background: #e7f3ff;
+}

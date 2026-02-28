@@ -1,0 +1,19 @@
+.footer {
+  border-top: 1px solid #dddfe2;
+  padding: 16px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  justify-content: center;
+  background: white;
+}
+
+.footer a {
+  font-size: 13px;
+  color: #606770;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

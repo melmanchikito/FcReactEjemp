@@ -1,0 +1,45 @@
+.izquierda {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;    /* ← texto abajo */
+  justify-content: flex-start;
+  gap: 0;
+  padding: 0 0 40px 60px;  /* ← pegado abajo a la izquierda */
+  position: relative;
+  min-height: 500px;
+}
+
+/* Texto abajo a la izquierda */
+.hero-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 220px;
+  z-index: 2;
+}
+
+/* Quita el "facebook" en texto - el logo ya está en el Header */
+.logo {
+  display: none;
+}
+
+.slogan {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1c1e21;
+}
+
+.slogan-azul {
+  color: #1877f2;
+}
+
+/* Imagen en el centro grande */
+.hero-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-30%);
+  width: 680px;
+  max-width: 100%;
+}

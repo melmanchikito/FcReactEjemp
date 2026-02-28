@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  background: white;
+}
+
+/* Dos columnas centradas */
+.pagina {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8%;
+  min-height: calc(100vh - 140px);
+  width: 100%;
+}
+
+/* Línea vertical entre columnas */
+.separador-vertical {
+  width: 1px;
+  background-color: #dddfe2;
+  align-self: stretch;
+  margin: 0 60px;
+  flex-shrink: 0;
+}
