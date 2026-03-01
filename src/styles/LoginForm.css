@@ -1,8 +1,8 @@
-/* Caja - sin borde, solo sombra suave */
+/* Caja - sin borde, sin sombra */
 .caja {
   background: white;
   border-radius: 8px;
-  box-shadow: none;   /* ← cambia esto */
+  box-shadow: none;
   border: none;
   padding: 20px;
   width: 380px;
@@ -10,17 +10,20 @@
   flex-direction: column;
   gap: 16px;
 }
-.caja form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;   /* ← más espacio entre inputs y botón */
+
+/* Título */
+.caja-titulo {
+  font-size: 20px;
+  font-weight: normal;
+  color: #1c1e21;
 }
-/* Inputs más redondeados */
+
+/* Inputs redondeados */
 .caja-input {
   width: 100%;
   padding: 14px 16px;
   border: 1px solid #dddfe2;
-  border-radius: 20px;        /* ← más redondeado */
+  border-radius: 20px;
   font-size: 16px;
   outline: none;
   color: #1c1e21;
@@ -31,14 +34,14 @@
   box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
 }
 
-/* Botón login más redondeado */
+/* Botón iniciar sesión */
 .btn-login {
   width: 100%;
   padding: 14px;
   background: #1877f2;
   color: white;
   border: none;
-  border-radius: 20px;        /* ← más redondeado */
+  border-radius: 20px;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
@@ -48,7 +51,25 @@
   background: #166fe5;
 }
 
-/* Botón crear cuenta más redondeado */
+/* Link olvidé contraseña */
+.link-olvide {
+  text-align: center;
+  color: #1877f2;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.link-olvide:hover {
+  text-decoration: underline;
+}
+
+/* Línea separadora */
+.separador-form {
+  border: none;
+  border-top: 1px solid #dddfe2;
+}
+
+/* Botón crear cuenta */
 .btn-crear {
   display: block;
   margin: 0 auto;
@@ -56,13 +77,23 @@
   background: white;
   color: #1877f2;
   border: 1.5px solid #1877f2;
-  border-radius: 20px;        /* ← más redondeado */
+  border-radius: 20px;
   font-size: 17px;
   font-weight: bold;
   cursor: pointer;
-  width: 100%;                /* ← ocupa todo el ancho como el original */
+  width: 100%;
 }
 
 .btn-crear:hover {
   background: #e7f3ff;
+}
+
+/* Meta logo */
+.meta-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: #606770;
+  font-size: 15px;
 }
